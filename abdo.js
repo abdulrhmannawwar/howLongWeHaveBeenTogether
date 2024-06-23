@@ -30,7 +30,7 @@ function showHearts(){
         let randIdx = Math.floor(Math.random() * hearts.length);
         div.innerHTML = hearts[randIdx];
         div.className = 'heart';
-        div.style.top = `${randomNumber(0,120)}px`;
+        div.style.top = `${randomNumber(0,100)}px`;
         div.style.left = `${randomNumber(20,w-60)}px`;
         document.body.appendChild(div);
         setTimeout(()=>{

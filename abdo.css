@@ -1,9 +1,10 @@
 body{
     font-family: "Cairo", sans-serif;
     background-image: url('tvgirl.jpg');
-    background-position: center;
     background-size: cover;
+    background-position:center;
     background-repeat: no-repeat;
+    object-fit: cover;
     background-color: black;
     padding: 0;
     margin: 0;
@@ -16,7 +17,7 @@ body{
 }
 .container{
     width: 85vw;
-    margin: 200px auto;
+    margin: 175px auto;
     border: 2px solid rgb(212, 0, 255);
     font-size: large;
     display: flex;
@@ -35,6 +36,8 @@ body{
     position: absolute;
     font-size: 40px;
 }
-@keyframes fallingHearts {
-    
+@media (max-width : 800px) {
+    body{
+        background-position:unset;
+    }
 }
